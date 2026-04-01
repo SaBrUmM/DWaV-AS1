@@ -101,39 +101,6 @@ Wikipedia Article
 - pip
 - Virtual environment (recommended)
 
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd as1-dwav
-   ```
-
-2. **Create virtual environment**
-   ```bash
-   python -m venv .venv
-   ```
-
-3. **Activate virtual environment**
-   - Windows:
-     ```bash
-     .venv\Scripts\activate
-     ```
-   - macOS/Linux:
-     ```bash
-     source .venv/bin/activate
-     ```
-
-4. **Install dependencies**
-   ```bash
-   pip install requests beautifulsoup4 pandas lxml
-   ```
-
-5. **Install Jupyter** (if running notebook locally)
-   ```bash
-   pip install jupyter
-   ```
-
 ## 💻 Usage
 
 ### Run the Full Pipeline
