@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest-Grossing Films</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Highest-Grossing Films</h1>
+            <p class="subtitle">Interactive database of top films by worldwide box office</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-bar" 
+                    placeholder="Search by title, director, or country..."
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <div class="buttons-section">
+                <button id="sortByYearBtn" class="sort-btn">
+                    <span class="sort-icon">↕</span> Year
+                </button>
+                <button id="sortByBoxOfficeBtn" class="sort-btn">
+                    <span class="sort-icon">↕</span> Box Office
+                </button>
+                <button id="resetBtn" class="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <span id="filmCount" class="film-count">Loading films...</span>
+        </div>
+
+        <table class="films-table">
+            <thead>
+                <tr>
+                    <th class="rank">#</th>
+                    <th class="title">Title</th>
+                    <th class="year">Year</th>
+                    <th class="director">Director</th>
+                    <th class="box-office">Box Office</th>
+                    <th class="country">Country</th>
+                </tr>
+            </thead>
+            <tbody id="filmsTableBody">
+                <tr class="loading">
+                    <td colspan="6">Loading films...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <p>Data sourced from Wikipedia • Last updated: April 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
